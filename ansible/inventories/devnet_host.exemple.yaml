@@ -1,0 +1,16 @@
+# Example host file for Catalyst8k
+
+---
+all:
+  hosts:
+    catalyst8k:
+      ansible_host: <host ip>       
+      ansible_user: <user>        
+      ansible_password: !vault |
+          $ANSIBLE_VAULT;1.1;AES256
+          <encrypted-placeholder>
+      ansible_network_os: cisco.ios.ios  # modules conçus pour Cisco IOS / IOS-XE
+      ansible_connection: network_cli    # méthode de connexion (içi ansible va exécuter les commandes en cli via ssh)
+      ansible_become: yes
+      ansible_become_method: enable
+      # ansible_become_password:         # if enable password
