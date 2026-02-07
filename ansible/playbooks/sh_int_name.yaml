@@ -1,0 +1,15 @@
+---
+- name: show interfaces name json
+  hosts: catalyst8k
+  gather_facts: no
+
+  tasks:
+  - name: retrieve interfaces
+    cisco.ios.ios_interfaces:
+      config:
+      state: gathered
+    register: interfaces
+
+  - name: display interfaces
+    debug:
+      var: interfaces

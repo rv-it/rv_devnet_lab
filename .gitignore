@@ -1,3 +1,16 @@
+# Environment variables
+.env
+
+# secrets ansible lab
+inventories/devnet_host.yaml
+inventories/host_vars/*.yaml
+
+# Ansible
+*.retry
+.ansible/
+*.yml~
+*.swp
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

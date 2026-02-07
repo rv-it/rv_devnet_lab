@@ -1,0 +1,14 @@
+---
+- name: Add Catalyst8k SSH key to known_hosts
+  hosts: localhost
+  gather_facts: no
+
+  vars:
+    device_ip: <your device ip>
+
+  tasks:
+    - name: retrieve and add key
+      ansible.builtin.known_hosts:
+        path: "~/.ssh/known_hosts"
+        name: "{{ device_ip }}"
+        key: "{{ lookup('pipe', 'ssh-keyscan ' + device_ip) }}"

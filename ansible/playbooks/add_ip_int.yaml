@@ -1,0 +1,27 @@
+---
+- name: Configure interfaces on Catalyst8k
+  hosts: catalyst8k
+  gather_facts: no
+
+  tasks:
+    - name: created Loopback100
+      cisco.ios.ios_config:
+        lines:
+          - description Created with ansible
+          - ip address {{ Loopback100 }}
+        parents: interface Loopback100
+
+    - name: configure GIG2
+      cisco.ios.ios_config:
+        lines:
+          - description configured with ansible
+          - ip address {{ GigabitEthernet2 }}
+        parents: interface GigabitEthernet2 
+    
+    - name: configured GIG3
+      cisco.ios.ios_config:
+        lines:
+          - description configured with ansible
+          - ip address {{ GigabitEthernet3 }}
+        parents: interface GigabitEthernet3
+    
