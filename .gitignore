@@ -2,8 +2,8 @@
 .env
 
 # secrets ansible lab
-inventories/devnet_host.yaml
-inventories/host_vars/*.yaml
+ansible/inventories/devnet_host.yaml
+ansible/inventories/host_vars/*.yaml
 
 # Ansible
 *.retry
