@@ -1,9 +1,10 @@
 # Environment variables
+*.env
 .env
 
 # secrets ansible lab
 ansible/inventories/devnet_host.yaml
-ansible/inventories/host_vars/*.yaml
+ansible/inventories/host_vars/catalyst8k.yaml
 
 # Ansible
 *.retry
