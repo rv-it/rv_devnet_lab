@@ -4,9 +4,9 @@ Lab projects developed to prepare the **Cisco DevNet certification**.
 
 ## Technologies / Scripts included
 
-- **Ansible, RESTCONF, NETCONF** scripts using the **"IOS XE on Cat8kv"** sandbox
-- **Meraki** scripts using the **"Meraki Small Business and Enterprise"** sandbox
-- **Catalyst** scripts using the **Catalyst Center Sandbox** sandbox  
+- **Ansible, RESTCONF, NETCONF** scripts uses the **"IOS XE on Cat8kv"** sandbox
+- **Meraki** script uses the **"Meraki Small Business and Enterprise"** sandbox
+- **Catalyst** script uses the **Catalyst Center** sandbox  
   (All sandboxes are available at (https://devnetsandbox.cisco.com/))
 
 ## Notes
