@@ -2,7 +2,7 @@
 
 This folder contains Python scripts that use **RESTCONF** and **IETF YANG models** to retrieve and configure network interfaces and static routes on Cisco devices.
 
-These scripts are for **lab environments** or **DevNet practice**.
+These scripts are for **lab environments** or **DevNet practice**, and have been **tested only** on the **"IOS XE on Cat8kv"** sandbox.
 
 ---
 

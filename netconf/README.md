@@ -2,7 +2,7 @@
 
 This folder contains Python scripts that use **NETCONF** and **YANG models** to configure Cisco IOS XE devices.
 
-These scripts are for **lab environments** or **DevNet practice**.
+These scripts are for **lab environments** or **DevNet practice** and have been **tested only** on the **"IOS XE on Cat8kv"** sandbox..
 
 ---
 
