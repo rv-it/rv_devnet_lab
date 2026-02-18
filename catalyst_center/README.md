@@ -6,7 +6,7 @@ This Python script retrieves the **running configuration** of all devices in a *
 1. Authenticates to the Cisco Catalyst Center API.
 2. Gets the list of devices.
 3. Downloads the running-config for each device.
-4. Saves files as:
+4. Saves files as: running_<hostname>.txt
 
 ## Configuration
 
