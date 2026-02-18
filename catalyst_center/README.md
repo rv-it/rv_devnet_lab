@@ -38,4 +38,4 @@ running_router1.txt
 ## Warning
 
 SSL verification is disabled (verify=False) for lab environments.
-Do not use as-is in production
+Do not use in production
