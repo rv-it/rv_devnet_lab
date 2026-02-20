@@ -14,6 +14,10 @@ This Python script retrieves information from your Cisco Meraki organization and
 
 ## Usage
 
+Install dependencies:
+
+`pip install -r requirements.txt`
+
 Create a .env file with your API token:
 
 token=YOUR_MERAKI_API_TOKEN

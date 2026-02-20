@@ -8,20 +8,27 @@ This Python script retrieves the **running configuration** of all devices in a *
 3. Downloads the running-config for each device.
 4. Saves files as: running_hostname.txt
 
-## Configuration
-
-Create a cred.env file in the same folder as the script:
-
-username=your_username
-password=your_password
 
 ## Usage
+
+Install dependencies:
+
+`pip install -r requirements.txt`
+
+Create a .env file:
+
+```bash
+username=your_username
+password=your_password
+```
 
 Run the script:
 
 python script.py
 
 Then enter:
+
+- Path to your .env file
 
 - IP address of the Cisco Catalyst Center
 

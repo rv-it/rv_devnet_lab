@@ -11,10 +11,18 @@ def main():
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)   
 
     # chemin vers le fichier contenant les variables d'envirronements
-    # si chemin windows: r"path\to\file"
-    cred_path = "cred.env"
+    cred_path = input(r"enter the path of your .env file (ex: path/to/file.env or C:\\path\to\file.env): ")
+    cred_path_ft = Path(cred_path)
+
+    if not cred_path_ft.exists():
+        print("  --------------------------------------------------------------------------")
+        print(" |  path doesn't exist, please restart the script and provide a valid path. |")
+        print("  --------------------------------------------------------------------------")
+        # (1) pour signaler qu'il y a eu une erreur au système
+        sys.exit(1)
+
     # chargement des variables d'envirronements
-    load_dotenv(cred_path)
+    load_dotenv(cred_path_ft)
     # Récupération des identifiants pour récuprer le token
     username = os.getenv("username")
     password = os.getenv("password")    
